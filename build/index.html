@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<header class="header">
+	<div class="container">
+		<div class="header__content">
+			<div class="header__logo">
+				<h1 class="visually-hidden">сервис PinkChicken</h1>
+				<img class="logo" src="./img/logo.svg" alt="PinkChicken logo">
+			</div>
+			<div class="header__menu header__menu--desktop menu">
+				<ul class="menu__list">
+					<li class="menu__item menu__item--convert">
+						<button class="btn btn--convert">
+							<img class="btn__img" src="./img/percent.svg" alt="Conversion percentage">
+							<span class="btn__text">5%</span>
+						</button>
+					</li>
+					<li class="menu__item menu__item--user">
+						<button class="btn btn--user">
+							<img class="btn__img" src="./img/username-icon.svg" alt="User Icon">
+							<span class="btn__text">Username@adaurum.ru</span>
+						</button>
+					</li>
+					<li class="menu__item menu__item--buttons">
+						<button class="menu__btn btn-settings" id="btn-settings">
+							<img src="./img/settings-icon.svg" alt="Settings button">
+						</button>
+						<button class="menu__btn btn-logout">
+							<img src="./img/log-in.svg" alt="The logout button">
+						</button>
+					</li>
+				</ul>
+			</div>
+			<div class="header__menu header__menu--mobile menu">
+				<div class="header__menu-info">
+					<span class="header__menu-user">Username@adaurum.ru</span>
+					<span class="header__menu-convert">5% выручки</span>
+				</div>
+				<div class="header__menu-buttons">
+					<button class="menu__btn btn-settings">
+						<img src="./img/settings-icon.svg" alt="Settings button">
+					</button>
+					<button class="menu__btn btn-logout">
+						<img src="./img/log-in.svg" alt="The logout button">
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+	<main class="main">
+		<div class="container">
+			<div class="main__content">
+				<section class="files">
+  <h2 class="files__title heading-2">Файлы</h2>
+  <div class="files__descr">
+    <img src="./img/file.svg" alt="File download">
+    <p class=" paragraph-1">Закажи у&nbsp;личного помощника медиаплан. Он&nbsp;появится в&nbsp;этом разделе
+    </p>
+  </div>
+</section>
+				<section class="chat">
+  <div class="chat__content">
+    <div class="chat__menu">
+      <div class="chat__menu-top">
+        <h2 class="chat__title heading-2">Личный помощник</h2>
+        <button class="assistant-button assistant-button--mobile">
+          <img src="./img/triple.svg" alt="Open menu assistant">
+        </button>
+      </div>
+
+      <div class="chat__assistant">
+        <div class="chat__assistant-info">
+          <span class="chat__assistant-name">Jim Davidson</span>
+          <span class="chat__assistant-mail">Jim Davidson@adaurum.ru</span>
+        </div>
+        <div class="chat__assistant-btn">
+          <button class="assistant-button assistant-button--desktop" id="assistant-button">
+            <img src="./img/triple.svg" alt="Open menu assistant">
+          </button>
+          <div class="chat__assistant-menu ">
+            <button class="assistant-menu-btn">Обратная связь о работе сервиса</button>
+            <button class="assistant-menu-btn">Сменить помощника</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="chat__windiow">
+      <div class="chat__windiow-wrap">
+        <div class="window-chat">
+          <div class="window-chat__descr">
+            <img class="window-chat__img" src="./img/woman.svg" alt="woman picture">
+            <p class="window-chat__text">Это чат с&nbsp;администратором. Ты&nbsp;можешь с&nbsp;ним пообщаться
+              по&nbsp;любому вопросу о&nbsp;нашем сервисе
+              и&nbsp;узнать о&nbsp;ходе работы
+            </p>
+          </div>
+          <div class="window-chat__buttons">
+            <button class="question-btn question-btn--accent">Заказать медиаплан</button>
+            <button class="question-btn">Заказать отчет</button>
+          </div>
+          <label class="window-chat__label">
+            <textarea class="window-chat__textarea" id="textarea" cols="30" rows="10"
+              placeholder="Введите сообщение для администратора"></textarea>
+            <div class="window-chat__input-btns">
+              <label>
+                <input class="visually-hidden" type="file">
+                <img class="input-btn input-btn--folder" src="./img/folder-add.svg" alt="Загузить файл">
+              </label>
+
+              <label>
+                <input class="visually-hidden" type="file">
+                <img class="input-btn input-btn--galerey" src="./img/galerey.svg" alt="Загузить файл">
+              </label>
+
+              <button class="input-btn input-btn--send" type="submit">
+                <img src="./img/send.svg" alt="Загузить файл">
+                <span>Enter</span>
+              </button>
+            </div>
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+			</div>
+		</div>
+
+	</main>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__content">
+			<div class="footer__left">
+				<img src="./img/logo-footer.svg" alt="" class="footer__logo">
+				<a class="footer__confidentiality" href="">Политика конфиденциальности</a>
+			</div>
+			<div class="footer__right">
+				<a class="footer__mail" href="mailto:pinkchicken@adaurum.ru">pinkchicken@adaurum.ru</a>
+				<ul class="footer__lang-list">
+					<li class="footer__lang-item footer__lang-item--active"><button>RU</button></li>
+					<li class="footer__lang-item"><button>EN</button></li>
+					<li class="footer__lang-item"><button>TUR</button></li>
+				</ul>
+				<ul class="footer__social-list">
+					<li class="footer__social-item">
+						<a href="" target="_blank"><img src="./img/telegram.svg" alt=""></a>
+					</li>
+					<li class="footer__social-item">
+						<a href="" target="_blank"><img src="./img/whatsapp.svg" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

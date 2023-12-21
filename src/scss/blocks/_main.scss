@@ -1,0 +1,25 @@
+.main {
+	padding-bottom: 60px;
+
+	.container {
+		@media (width < 501px) {
+			padding: 0;
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 295px auto;
+		grid-template-rows: 709px;
+		gap: 30px;
+		@media (width < 769px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: 405px 709px;
+			gap: 20px;
+		}
+		@media (width < 376px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: 720px;
+		}
+	}
+}

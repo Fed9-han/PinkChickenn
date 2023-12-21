@@ -1,0 +1,152 @@
+.chat {
+	background-color: var(--c-white);
+	border-radius: 20px;
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+	padding: 28px;
+	padding-top: 26px;
+
+	@media (width < 494px) {
+		background-color: var(--c-chat);
+		padding: 30px 0;
+	}
+	@media (width < 501px) {
+		padding-top: 0;
+		padding-bottom: 30px;
+		border-radius: 0;
+		padding: 0;
+		background-color: var(--c-chat);
+	}
+
+	// .chat__content
+
+
+
+	// .chat__menu
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5px;
+		margin-bottom: clamp(20px, 0.139rem + 2.315vw, 30px);
+		background-color: var(--c-white);
+		@media (width < 1010px) {
+			display: block;
+		}
+		@media (width < 769px) {
+			display: flex;
+		}
+		@media (width < 681px) {
+			display: block;
+		}
+		@media (width < 494px) {
+			padding: 10px;
+			border-radius: 20px;
+		}
+		@media (width < 376px) {
+			background-color: var(--c-white);
+
+			border-radius: 0;
+		}
+	}
+
+	&__menu-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (width < 451px) {
+			margin-bottom: 12px;
+		}
+	}
+
+	// .chat__title
+
+
+	// .chat__assistant
+
+	&__assistant {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 26px;
+		@media (width < 1010px) {
+			justify-content: space-between;
+			gap: 0px;
+		}
+		@media (width < 769px) {
+			display: flex;
+			gap: 26px;
+		}
+		@media (width < 681px) {
+			justify-content: space-between;
+			gap: 0px;
+		}
+	}
+
+	// .chat__assistant-info
+
+	&__assistant-info {
+		font-size: 15px;
+		@media (width < 342px) {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+	}
+
+	// .chat__assistant-name
+
+	&__assistant-name {
+		margin-right: 10px;
+		font-weight: 600;
+	}
+
+	// .chat__assistant-mail
+
+	&__assistant-mail {
+		color: var(--c-lightGray);
+		font-weight: 400;
+	}
+
+	// .chat__assistant-button
+
+	&__assistant-menu {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 48px;
+		text-align: right;
+		border-radius: 8px;
+		background: var(--c-white);
+		padding: 16px 30px;
+		box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+
+		&--active {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 12px;
+		}
+	}
+
+	// .chat__windiow
+
+
+}
+
+.assistant-button {
+	&--desktop {
+		display: block;
+		@media (width < 451px) {
+			display: none;
+		}
+	}
+	&--mobile {
+		display: none;
+		@media (width < 451px) {
+			display: block;
+		}
+	}
+}

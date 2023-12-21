@@ -1,0 +1,110 @@
+.footer {
+	background-color: var(--c-chat);
+	padding: 28px 0;
+	@media (width < 616px) {
+		background-color: var(--c-white);
+	}
+	@media (width < 376px) {
+		padding: 40px 20px;
+	}
+
+	// .footer__content
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 10px;
+		row-gap: 26px;
+		flex-wrap: wrap;
+
+		@media (width < 616px) {
+			row-gap: 20px;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+	&__left {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: clamp(41px, -4.66rem + 15.046vw, 106px);
+		row-gap: 20px;
+
+		@media (width < 376px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+	&__right {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 65px;
+		row-gap: 20px;
+		@media (width < 1198px) {
+			flex-direction: row-reverse;
+		}
+		@media (width < 376px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	// .footer__mail
+
+	&__mail {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+
+		&::before {
+			content: '';
+			background-image: url('./../img/sms.svg');
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	// .footer__lang-list
+
+	&__lang-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+
+		&::before {
+			content: '';
+			background-image: url('./../img/global.svg');
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	// .footer__lang-item
+
+	&__lang-item {
+		&--active {
+			color: var(--c-accent);
+		}
+	}
+
+	// .footer__social-list
+
+	&__social-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+	}
+
+	// .footer__social-item
+}

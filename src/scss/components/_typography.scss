@@ -1,0 +1,16 @@
+.heading-1 {
+	font-size: 43px;
+	line-height: 114%;
+	color: var(--c-red);
+}
+.heading-2 {
+	font-family: ('Inter'), sans-serif;
+	font-size: clamp(20px, 1.011rem + 1.018vw, 24px);
+	font-weight: 600;
+}
+
+.paragraph-1 {
+	font-family: ('Inter'), sans-serif;
+	font-size: clamp(14px, 0.756rem + 0.509vw, 16px);
+	font-weight: 500;
+}

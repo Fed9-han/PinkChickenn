@@ -1,0 +1,140 @@
+.chat {
+	// .chat__windiow
+
+
+
+	// .chat__windiow-wrap
+
+	&__windiow-wrap {
+		background-color: var(--c-chat);
+		border-radius: 20px;
+		@media (width < 376px) {
+			border-radius: 0;
+		}
+	}
+}
+.window-chat {
+	@media (width < 501px) {
+		padding: 0 20px 30px;
+	}
+	// .window-chat__descr
+
+	&__descr {
+		padding-top: 50px;
+		padding-bottom: 57px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+
+		//     padding-top: 14px;
+		// padding-bottom: 40px;
+		@media (width < 820px) {
+			padding-top: 14px;
+			padding-bottom: 40px;
+		}
+		@media (width < 769px) {
+			padding-top: 50px;
+			padding-bottom: 57px;
+		}
+	}
+
+	// .window-chat__img
+
+	&__img {
+		@media (width < 769px) {
+			width: 180px;
+		}
+	}
+
+	// .window-chat__text
+
+	&__text {
+		font-size: clamp(14px, 0.756rem + 0.509vw, 16px);
+		text-align: center;
+		max-width: 470px;
+	}
+
+	// .window-chat__buttons
+
+	&__buttons {
+		display: flex;
+		gap: 12px;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		margin-left: 20px;
+
+		@media (width < 494px) {
+			flex-direction: column-reverse;
+			align-items: flex-end;
+			margin-left: 0;
+		}
+	}
+
+	// .window-chat__label
+
+	&__label {
+		display: block;
+		position: relative;
+		border-radius: 20px;
+		border: 2px solid var(--c-chat);
+		background: var(--c-white);
+		height: 144px;
+		cursor: default;
+	}
+
+	// .
+
+	&__textarea {
+		width: 100%;
+		height: 90px;
+		resize: none;
+		padding-right: 75px;
+		padding-top: 25px;
+		padding-left: 20px;
+		&:focus-visible {
+			outline: none;
+		}
+	}
+
+	// .window-chat__input-btns
+
+
+}
+
+.input-btn {
+	position: absolute;
+}
+.input-btn--folder {
+	z-index: 2;
+	bottom: 20px;
+	left: 20px;
+}
+.input-btn--galerey {
+	z-index: 2;
+	bottom: 20px;
+	left: 64px;
+}
+.input-btn--send {
+	z-index: 2;
+	right: 33px;
+	bottom: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	img {
+		padding: 13px;
+		background-color: var(--c-accent);
+		border-radius: 50%;
+	}
+	span {
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 135%;
+	}
+}
+
+.window-chat__label:has(.window-chat__textarea:focus-visible) {
+	border: 2px solid #ee26c2;
+}
